@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Riki</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-danger text-light text-center p-3">
+        <h1 class="fs-1 fw-bold">Portofolio</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-secondary sticky-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Riki</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container min-vh-100">
+      <!-- Content here -->
+    <div class="row">
+      <div class="col-12">
+        
+      </div>
+      <div class="col-10">
+        <!-- Content utama -->
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email-pengguna" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Komentar</label>
+          <textarea class="form-control" id="komentar-pengguna" rows="3"></textarea>
+        </div>
+        <button class="btn btn-success" id="btn-kirim">Kirim</button>
+
+        <div class="mb-3">
+            <h1>Komentar</h1>
+            <hr>
+            <div id="tambah-komentar">
+
+            </div>
+        </div>
+        
+          <!-- end Content utama -->
+          <!-- end card 2 -->
+      
+      </div>
+      <div class="col-2">.col-6<br>Subsequent columns continue along the new line.</div>
+    </div>
+  </div>
+  <!-- end content -->
+
+
+    
+
+      
+      <footer class="bg-danger text-light p-2">
+        <p>Riki Muhamad Taopik</p>
+      </footer>
+
+      
+
+      
+
+
+
+    <script type="javascript" src="assets/js/bootsrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#btn-kirim").click(function(){
+          var email = $("#email-pengguna").val();
+          var komentar = $("#komentar-pengguna").val();
+          $("#tambah-komentar").append("<h4>" + email + "</h4>"+komentar+" <hr>");
+
+        });
+      });
+    </script>
+</body>
+</html>
